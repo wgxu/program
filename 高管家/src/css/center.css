@@ -1,0 +1,86 @@
+body {
+    background-color: #f6f6f6;
+}
+.top {
+    width: 100%;
+    height: 5.55rem;
+    background-color: #b7e5fd;
+}
+.photo {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+.photo img {
+    position: absolute;
+    margin: auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 3.43rem;
+    height: 3.43rem;
+    border-radius: 100%;
+}
+.userinfo {
+    padding-top: 1.12rem;
+    float: left;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.userinfo p {
+    line-height:1.12rem;
+    font-size: 0.7rem;
+    color: #999;
+}
+.userinfo span {
+    margin-left: 3%;
+}
+.content {
+    background-color: #fff;
+}
+.content a{
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 4.86rem;
+}
+.content a.rightLine:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    height:100%;
+    border-right: 1px solid #ededed;
+}
+.content a:before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    border-bottom: 1px solid #eee;
+}
+.content a>.item {
+    position: absolute;
+    margin: auto;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 2.56rem;
+    height: 2.56rem;
+}
+.content a>.item>img {
+    display: block;
+    margin: 0 auto;
+    width: 1.28rem;
+    height: 1.28rem;
+}
+.content a>.item>p {
+    font-size: 0.6rem;
+    text-align: center;
+    color: #000;
+    line-height:30px;
+}

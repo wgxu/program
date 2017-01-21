@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/chat.css">
+	<title>高管家健康俱乐部</title>
+	<!--sdk-->
+	<script src="../static/sdk/strophe.js"></script>
+	<script src="../static/sdk/easemob.im-1.1.1.js"></script>
+	<script src="../static/sdk/easemob.im.shim.js"></script><!--兼容老版本(1.0.7含以前版本)sdk需引入此文件-->
+
+	<!--config-->
+	<script src="../static/js/easemob.im.config.js"></script>
+
+	<!--demo-->
+	<script src="../static/js/jquery-1.11.1.js"></script>
+	<script src="../static/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="../static/css/bootstrap.css" />
+	<link rel="stylesheet" href="../static/css/webim.css" />
+</head>
+<body>
+	<div id="waitLoginmodal" class="modal hide" data-backdrop="static">
+        <img src="../static/img/waitting.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正在努力加载中...</img>
+    </div>
+	<div id="content">
+		<div class="header">
+			<p id="talkToDivId"><a href="javascript:;"></a></p>
+		</div>
+		<div class="chat-info">
+			<div class="chat-item center chat-time">
+				<i>上午11:40</i>
+			</div>
+			<div class="chat-item chat-patient clearfix">
+				<div class="chat-message">张医生，您好，最近感觉血压高了很多</div>
+			</div>
+			<div class="chat-item chat-doctor clearfix">
+				<div class="chat-message">张医生，您好，最近感觉血压高了很多</div>
+			</div>
+			<div class="chat-item center chat-time">
+				<i>上午11:40</i>
+			</div>
+			<div class="chat-item chat-patient clearfix">
+				<div class="chat-message">张医生，您好，最近感觉血压高了很多</div>
+			</div>
+			<div class="chat-item chat-doctor clearfix">
+				<div class="chat-message">百度百科是百度公司推出的一部内容开放、自由的网络百科全书平台。其测试版于2006年4月20日上线，正式版在2008年4月2</div>
+			</div>
+		</div>
+		<div class="footer clearfix">
+			<a href="javascript:;" class="btn look"></a>
+			<a href="javascript:;" class="btn picture"></a>
+			<div id="input" class="input" contentEditable=true>
+				<!-- <textarea placeholder="请输入"></textarea> -->
+			</div>
+			<a href="javascript:;" class="send">发送</a>
+		</div>
+	</div>
+</body>
+<script src="../static/js/webim.js"></script>
+<script src="../js/chat.js"></script>
+</html>

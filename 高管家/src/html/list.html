@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/list.css">
+	<title>血压查询</title>
+</head>
+<body>
+	<div class="list-wrap">
+		<div class="title">
+			<i></i>
+			<p>血压记录</p>
+		</div>
+		<div class="header clearfix">
+			<div class="time">
+				<input type="date" id="startDate">
+			</div>
+			<div class="time">
+				<input type="date" id="endDate">
+			</div>
+		</div>
+		<div class="list" id="wrap">
+			<!-- <a href="javascript:;" class="one-high-blood">
+				<h3 class="clearfix">
+					<span>2016-12-09</span>
+					<span>星期五</span>
+					<span>09:49</span>
+				</h3>
+				<div class="content clearfix">
+					<div class="left-data">
+						<div class="item">
+							<div class="desc">
+								<p>高压</p>
+								<p>mmHG</p>
+							</div>
+							<div class="desc-data">133</div>
+						</div>
+						<div class="item">
+							<div class="desc">
+								<p>低压</p>
+								<p>mmHG</p>
+							</div>
+							<div class="desc-data">80</div>
+						</div>
+						<div class="item">
+							<div class="desc">
+								<p>心率</p>
+								<p>次/分钟</p>
+							</div>
+							<div class="desc-data">50</div>
+						</div>
+					</div>
+					<div class="right-chart">
+						<div class="circle">一级高血压</div>
+						<div class="heart-num heart-normal">心率正常</div>
+					</div>
+				</div>
+			</a>
+			<a href="javascript:;" class="blood-well">
+				<h3 class="clearfix">
+					<span>2016-12-09</span>
+					<span>星期五</span>
+					<span>09:49</span>
+				</h3>
+				<div class="content clearfix">
+					<div class="left-data">
+						<div class="item">
+							<div class="desc">
+								<p>高压</p>
+								<p>mmHG</p>
+							</div>
+							<div class="desc-data">133</div>
+						</div>
+						<div class="item">
+							<div class="desc">
+								<p>低压</p>
+								<p>mmHG</p>
+							</div>
+							<div class="desc-data">80</div>
+						</div>
+						<div class="item">
+							<div class="desc">
+								<p>心率</p>
+								<p>次/分钟</p>
+							</div>
+							<div class="desc-data">50</div>
+						</div>
+					</div>
+					<div class="right-chart">
+						<div class="circle ">理想血压</div>
+						<div class="heart-num heart-slow">心率过慢</div>
+					</div>
+				</div>
+			</a> -->
+		</div>
+	</div>
+</body>
+<!-- 列表模板 -->
+<script type="text/x-dot-template" id="templ">
+	{{for(var i = 0; i < it.length; i++){ }}
+		{{var item = it[i];}}
+		{{var dateArr = [' 星期日','星期一','星期二','星期三','星期四','星期五','星期六'];}}
+		{{var color = ['low-blood','blood-well','blood-normal','one-high-blood ','two-high-blood','three-high-blood'];}}
+
+		<a href="javascript:;" class="{{=color[item.type]}}">
+			<h3 class="clearfix">
+				<span>{{=item.date}}</span>
+				<span>{{=dateArr[item.week]}}</span>
+				<span>{{=item.time}}</span>
+			</h3>
+			<div class="content clearfix">
+				<div class="left-data">
+					<div class="item">
+						<div class="desc">
+							<p>高压</p>
+							<p>mmHG</p>
+						</div>
+						<div class="desc-data">{{=item.gaoya}}</div>
+					</div>
+					<div class="item">
+						<div class="desc">
+							<p>低压</p>
+							<p>mmHG</p>
+						</div>
+						<div class="desc-data">{{=item.diya}}</div>
+					</div>
+					<div class="item">
+						<div class="desc">
+							<p>心率</p>
+							<p>次/分钟</p>
+						</div>
+						<div class="desc-data">{{=item.xinlv}}</div>
+					</div>
+				</div>
+				<div class="right-chart">
+					<div class="circle">{{=item.level}}</div>
+					<div class="heart-num heart-normal {{=item.xlresult == '心率正常' ? 'heart-normal' : 'heart-slow'}}">{{=item.xlresult}}</div>
+				</div>
+			</div>
+		</a>
+	{{ }}}
+</script>
+
+
+<script src="../plugins/doT.min.js"></script>
+<script src="../js/list.js"></script>
+</html>

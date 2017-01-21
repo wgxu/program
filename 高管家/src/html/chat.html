@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta http-equiv=X-UA-Compatible content="IE=Edge,chrome=1">
+<meta name=format-detection content="telephone=no">
+<!--<meta name="viewport" content="width=device-width,initial-scale=1"/>-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>高管家健康俱乐部</title>
+<!--sdk-->
+<script src="../static/sdk/strophe.js"></script>
+<script src="../static/sdk/easemob.im-1.1.1.js"></script>
+<script src="../static/sdk/easemob.im.shim.js"></script><!--兼容老版本(1.0.7含以前版本)sdk需引入此文件-->
+
+<!--config-->
+<script src="../static/js/easemob.im.config.js"></script>
+
+<!--demo-->
+<script src="../static/js/jquery-1.11.1.js"></script>
+<script src="../static/js/bootstrap.js"></script>
+<link rel="stylesheet" href="../static/css/bootstrap.css" />
+<link rel="stylesheet" href="../static/css/webim.css" />
+<link rel="stylesheet" href="../css/chat.css">
+<link rel="stylesheet" href="../css/chat-new.css">
+
+</head>
+<body>
+
+    <div id="waitLoginmodal" class="modal hide" data-backdrop="../static">
+        <img src="../static/img/waitting.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正在努力加载中...</img>
+    </div>
+    <div class="content" id="content" >
+        <!-- 聊天页面 -->
+        <div class="chatRight">
+            <div id="chat01">
+                <div class="chat01_title" id="talkTo"></div>
+                <div id="null-nouser" class="chat01_content"></div>
+            </div>
+
+            <!-- <div class="chat02">
+                <div class="chat02_title">
+                    <a class="chat02_title_btn ctb01" onclick="showEmotionDialog()" title="选择表情"></a>
+            					<a id='sendPicBtn' class="chat02_title_btn ctb03" title="选择图片" type='img' href="#"></a>
+            					<label id="chat02_title_t"></label>
+                    <div id="wl_faces_box" class="wl_faces_box">
+                        <div class="wl_faces_content">
+                            <div class="title">
+                                <ul>
+                                    <li class="title_name">常用表情</li>
+                                    <li class="wl_faces_close"><span
+                                        onclick='turnoffFaces_box()'>&nbsp;</span></li>
+                                </ul>
+                            </div>
+                            <div id="wl_faces_main" class="wl_faces_main">
+                                <ul id="emotionUL">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wlf_icon"></div>
+                    </div>
+                </div>
+                <div id="input_content" class="chat02_content">
+                    <textarea id="talkInputId" style="resize: none;"></textarea>
+                </div>
+                <div class="chat02_bar">
+                    <ul>
+                        <li style="right: 5px; top: 5px;"><img src="../static/img/send_btn.jpg"
+                            onclick="sendText()" /></li>
+                    </ul>
+                </div>
+            
+                <div style="clear: both;"></div>
+            </div> -->
+            <div class="footer clearfix">
+				<input type='file' id="fileInput" style='display:none;'/>
+                <a href="javascript:;" class="btn-chat look" onclick="showEmotionDialog()"></a>
+				<a href="javascript:;" class="btn-chat picture" id="sendPicBtn" type="img"></a>
+				<div class="input" contentEditable=true id="talkInputId">
+				</div>
+				<a href="javascript:;" class="send" onclick="sendText()">发送</a>
+			</div>
+			<!-- 表情 -->
+			<div id="wl_faces_box" class="wl_faces_box">
+                <div class="wl_faces_content">
+                    <div class="title">
+                        <ul>
+                            <li class="title_name">常用表情</li>
+                            <li class="wl_faces_close"><span
+                                onclick='turnoffFaces_box()'>&nbsp;</span></li>
+                        </ul>
+                    </div>
+                    <div id="wl_faces_main" class="wl_faces_main">
+                        <ul id="emotionUL">
+                        </ul>
+                    </div>
+                </div>
+                <div class="wlf_icon"></div>
+            </div>
+        </div>
+    </div>
+	<script src="../static/js/webim.js"></script>
+	<script src="../js/chat.js"></script>
+</body>
+</html>

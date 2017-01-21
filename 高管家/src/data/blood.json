@@ -1,0 +1,167 @@
+[
+	{
+	"date": "2016-12-07",
+	"week": "3",
+	"time": "14:36",
+	"gaoya": "123",
+	"diya": "80",
+	"xinlv": "50",
+	"type": 2,
+	"level": "正常高值",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-07",
+	"week": "3",
+	"time": "14:40",
+	"gaoya": "115",
+	"diya": "80",
+	"xinlv": "50",
+	"type": 1,
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-07",
+	"week": "3",
+	"time": "17:17",
+	"gaoya": "120",
+	"diya": "80",
+	"xinlv": "50",
+	"type":1,
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-07",
+	"week": "3",
+	"time": "17:32",
+	"gaoya": "120",
+	"diya": "78",
+	"xinlv": "50",
+	"type": 1,
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-07",
+	"week": "3",
+	"time": "17:40",
+	"gaoya": "120",
+	"diya": "80",
+	"type": 1,
+	"xinlv": "50",
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-09",
+	"week": "5",
+	"time": "09:51",
+	"gaoya": "120",
+	"diya": "80",
+	"xinlv": "50",
+	"type": 1,
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-09",
+	"week": "5",
+	"time": "09:52",
+	"gaoya": "124",
+	"diya": "80",
+	"xinlv": "50",
+	"type": 2,
+	"level": "正常高值",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-09",
+	"week": "5",
+	"time": "18:07",
+	"gaoya": "122",
+	"diya": "80",
+	"type": 1,
+	"xinlv": "50",
+	"level": "正常高值",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-12",
+	"week": "1",
+	"time": "00:56",
+	"gaoya": "120",
+	"diya": "80",
+	"xinlv": "50",
+	"type": 1,
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-12",
+	"week": "1",
+	"time": "00:57",
+	"gaoya": "142",
+	"diya": "80",
+	"type": 3,
+	"xinlv": "50",
+	"level": "一级高血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-12",
+	"week": "1",
+	"time": "17:14",
+	"gaoya": "120",
+	"diya": "80",
+	"xinlv": "50",
+	"type": 1,
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-13",
+	"week": "2",
+	"time": "18:04",
+	"gaoya": "118",
+	"diya": "80",
+	"type": 1,
+	"xinlv": "50",
+	"level": "理想血压",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-13",
+	"week": "2",
+	"time": "18:07",
+	"gaoya": "123",
+	"diya": "80",
+	"type": 2,
+	"xinlv": "50",
+	"level": "正常高值",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-13",
+	"week": "2",
+	"time": "18:09",
+	"gaoya": "123",
+	"diya": "80",
+	"type": 2,
+	"xinlv": "50",
+	"level": "正常高值",
+	"xlresult": "心率过慢"
+	},
+	{
+	"date": "2016-12-13",
+	"week": "2",
+	"time": "18:10",
+	"gaoya": "144",
+	"diya": "93",
+	"type": 3,
+	"xinlv": "69",
+	"level": "一级高血压",
+	"xlresult": "心率正常"
+	}
+]
