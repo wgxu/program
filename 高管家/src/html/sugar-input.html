@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="../plugins/jquery-weui/jquery-weui.min.css">
     <link rel="stylesheet" href="../plugins/timePick/style.css">
     <link rel="stylesheet" href="../css/list.css">
-    <title>血压录入</title>
+    <title>血糖录入</title>
 </head>
 <body style="background-color: #f6f6f6;">
 <div class="list-wrap">
     <div class="title">
         <i></i>
-        <p>血压录入</p>
+        <p>血糖录入</p>
     </div>
     <div class="xylr-content">
         <div class="list-row clearfix">
-            <span class="title required">高压</span>
-            <span class="unit">mmHG</span>
-            <input type="number" class="number" placeholder="请输入高压">
+            <span class="title required">血糖值</span>
+            <span class="unit">mmol/L</span>
+            <input type="number" class="number" placeholder="请输入血糖值">
         </div>
         <div class="list-row clearfix">
-            <span class="title required">低压</span>
-            <span class="unit">mmHG</span>
-            <input type="number" class="number" placeholder="请输入低压">
-        </div>
-        <div class="list-row clearfix">
-            <span class="title required">心率</span>
-            <span class="unit longUnit">次/分钟</span>
-            <input type="number" class="number" placeholder="请输入心率">
+            <span class="title required">时段</span>
+            <select class="measure">
+                <option value="1">请输入测量时段</option>
+                <option value="2">全部时段</option>
+                <option value="3">空腹</option>
+                <option value="4">午餐前</option>
+                <option value="5">午餐后</option>
+                <option value="6">晚餐前</option>
+                <option value="7">晚餐后</option>
+                <option value="8">睡前</option>
+                <option value="9">未知</option>
+            </select>
         </div>
         <div class="list-row clearfix">
             <span class="title required">测试日期</span>
