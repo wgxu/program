@@ -1,0 +1,5 @@
+/*透明*/
+@mixin opacity ($opacity:1){
+    opacity: $opacity;
+    filter: opacity($opacity*100);
+}

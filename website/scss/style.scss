@@ -1,0 +1,76 @@
+$sWidth: 1920;  //psd尺寸
+$nWidth: 1440;  //实际尺寸
+$minWidth: 1200px;
+@import "./comm/_fun";
+@import "./comm/_%";
+@import "./comm/_mixin";
+
+.top {
+  height: getPx(40);
+  line-height: getPx(40);
+  color: #fff;
+  background-color: #666;
+}
+
+.tips {
+  & {
+    margin: 0 auto;
+    width: $minWidth;
+    @include opacity(0.5);
+  }
+  .btn {
+    float: right;
+    cursor: pointer;
+  }
+  .btn>span:hover {
+    position: relative;
+    color: #fff;
+  }
+  .btn>span:last-child {
+    padding-left: 10px;
+    border-left: 1px solid #f1f1f1;
+  }
+  .telphone {
+    margin-left: 10px;
+    padding-left: 22px;
+    font-size: 14px;
+    display: inline-block;
+    background: url(../images/comm/mobile.png) no-repeat left center;
+    background-size: 15px 13px;
+  }
+}
+.nav-box {
+  & {
+    margin:  0 auto;
+    width: $minWidth;
+    padding: getPx(10) 0;
+  }
+  .logo {
+    float: left;
+    width: getPx(241);
+    height: getPx(86);
+  }
+  .logo>img {
+    width: 100%;
+  }
+  .nav {
+    margin-left: getPx(280);
+    padding: getPx(51/2) 0;
+    @extend %clearfix;
+  }
+  .nav>a {
+    float: left;
+    margin-right: 32px;
+    padding: 0 getPx(20);
+    height: getPx(40);
+    line-height: getPx(40);
+    font-size: 16px;
+    color: #666;
+    border-radius: 5px;
+  }
+  .nav>a.active,
+  .nav>a:hover{
+    background-color: #288ad9;
+    color: #fff;
+  }
+}

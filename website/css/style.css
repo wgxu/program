@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*清除浮动*/
+.nav-box .nav:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0; }
+
+/*透明*/
+.top {
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #666; }
+
+.tips {
+  margin: 0 auto;
+  width: 1200px;
+  opacity: 0.5;
+  filter: opacity(50); }
+
+.tips .btn {
+  float: right;
+  cursor: pointer; }
+
+.tips .btn > span:hover {
+  position: relative;
+  color: #fff; }
+
+.tips .btn > span:last-child {
+  padding-left: 10px;
+  border-left: 1px solid #f1f1f1; }
+
+.tips .telphone {
+  margin-left: 10px;
+  padding-left: 22px;
+  font-size: 14px;
+  display: inline-block;
+  background: url(../images/comm/mobile.png) no-repeat left center;
+  background-size: 15px 13px; }
+
+.nav-box {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 7.5px 0; }
+
+.nav-box .logo {
+  float: left;
+  width: 180.75px;
+  height: 64.5px; }
+
+.nav-box .logo > img {
+  width: 100%; }
+
+.nav-box .nav {
+  margin-left: 210px;
+  padding: 19.125px 0; }
+
+.nav-box .nav > a {
+  float: left;
+  margin-right: 32px;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666;
+  border-radius: 5px; }
+
+.nav-box .nav > a.active,
+.nav-box .nav > a:hover {
+  background-color: #288ad9;
+  color: #fff; }
