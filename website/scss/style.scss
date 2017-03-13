@@ -6,16 +6,17 @@ $minWidth: 1200px;
 @import "./comm/_mixin";
 
 .top {
-  height: getPx(40);
-  line-height: getPx(40);
-  color: #fff;
   background-color: #666;
+  color: #fff;
 }
 
 .tips {
   & {
     margin: 0 auto;
     width: $minWidth;
+    height: getPx(40);
+    line-height: getPx(40);
+
     @include opacity(0.5);
   }
   .btn {
@@ -72,5 +73,11 @@ $minWidth: 1200px;
   .nav>a:hover{
     background-color: #288ad9;
     color: #fff;
+  }
+}
+.main {
+  .banner li{
+    width: 100%;
+    height: getPx(574);
   }
 }
