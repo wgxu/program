@@ -42,7 +42,7 @@
 .nav-box {
   margin: 0 auto;
   width: 1200px;
-  padding: 7.5px 0; }
+  padding: 20px 0 10px 0; }
 
 .nav-box .logo {
   float: left;
@@ -73,4 +73,22 @@
 
 .main .banner li {
   width: 100%;
-  height: 430.5px; }
+  height: 430.5px;
+  background: #2884da; }
+
+.main .service {
+  margin: 0 auto;
+  width: 1200px;
+  height: 427.5px;
+  background: #f1f1f1; }
+
+.main .type {
+  height: 495px;
+  background-color: #E5E5E5; }
+
+.main .case {
+  height: 360px; }
+
+.main .choose {
+  height: 255px;
+  background-color: #08afeb; }

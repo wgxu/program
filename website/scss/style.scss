@@ -16,7 +16,6 @@ $minWidth: 1200px;
     width: $minWidth;
     height: getPx(40);
     line-height: getPx(40);
-
     @include opacity(0.5);
   }
   .btn {
@@ -44,7 +43,7 @@ $minWidth: 1200px;
   & {
     margin:  0 auto;
     width: $minWidth;
-    padding: getPx(10) 0;
+    padding: 20px 0 10px 0;
   }
   .logo {
     float: left;
@@ -79,5 +78,23 @@ $minWidth: 1200px;
   .banner li{
     width: 100%;
     height: getPx(574);
+    background: #2884da;
+  }
+  .service {
+    margin: 0 auto;
+    width: $minWidth;
+    height: getPx(570);
+    background: #f1f1f1;
+  }
+  .type {
+    height: getPx(660);
+    background-color: #E5E5E5;
+  }
+  .case {
+    height: getPx(480);
+  }
+  .choose {
+    height: getPx(340);
+    background-color: #08afeb;
   }
 }
