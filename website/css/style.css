@@ -1,12 +1,13 @@
 @charset "UTF-8";
 /*清除浮动*/
-.nav-box .nav:after {
+.nav-box .nav:after, .main .service .item-list:after, .main .service .button:after {
   display: block;
   content: '';
   clear: both;
   height: 0; }
 
 /*透明*/
+/*设置背景图*/
 .top {
   background-color: #666;
   color: #fff; }
@@ -14,8 +15,8 @@
 .tips {
   margin: 0 auto;
   width: 1200px;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   opacity: 0.5;
   filter: opacity(50); }
 
@@ -58,10 +59,10 @@
 
 .nav-box .nav > a {
   float: left;
-  margin-right: 32px;
-  padding: 0 15px;
-  height: 30px;
-  line-height: 30px;
+  margin-right: 20px;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
   font-size: 16px;
   color: #666;
   border-radius: 5px; }
@@ -73,18 +74,158 @@
 
 .main .banner li {
   width: 100%;
-  height: 430.5px;
+  height: 574px;
   background: #2884da; }
 
 .main .service {
+  padding-top: 20px;
   margin: 0 auto;
   width: 1200px;
-  height: 427.5px;
-  background: #f1f1f1; }
+  height: 570px;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.main .service .title {
+  height: 37px;
+  background: url(../images/index/title-service.png) no-repeat center center; }
+
+.main .service .tips {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #777;
+  font-size: 15px; }
+
+.main .service .item-list {
+  margin-top: 20px;
+  width: 1192px; }
+
+.main .service .item {
+  display: block;
+  position: relative;
+  top: 0;
+  float: left;
+  margin-right: 100px;
+  width: 223px;
+  height: 276px;
+  background: url(../images/index/service-item.png) no-repeat;
+  background-size: 100% 100%;
+  transition: all .5s ease-out; }
+
+.main .service .item:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  width: 207px;
+  height: 27px;
+  background: url("../images/index/cloud.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item:hover {
+  transition: all .5s ease-out;
+  top: -10px;
+  background: url("../images/index/service-item-active.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item:hover p {
+  color: #ff6160; }
+
+.main .service .item:hover .item-text {
+  color: #fff; }
+
+.main .service .item > .img {
+  margin: 45px auto 0 auto;
+  width: 133px;
+  height: 102px; }
+
+.main .service .item > .html5 {
+  background: url("../images/index/html5.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item:hover > .html5 {
+  background: url("../images/index/html05.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item > .shop {
+  background: url("../images/index/shop1.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item:hover > .shop {
+  background: url("../images/index/shop01.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item > .wechat {
+  background: url("../images/index/02.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item:hover > .wechat {
+  background: url("../images/index/002.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item > .app {
+  background: url("../images/index/03.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item:hover > .app {
+  background: url("../images/index/003.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .service .item > p {
+  margin-top: 5px;
+  padding: 0 10%;
+  line-height: 20px;
+  font-size: 14px;
+  color: #a7a5a5; }
+
+.main .service .last-item {
+  margin-right: 0; }
+
+.main .service .item-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 70px;
+  color: #888;
+  font-size: 18px;
+  text-align: center; }
+
+.main .service .button {
+  margin: 100px auto 0 auto;
+  width: 180px; }
+
+.main .service .button > a {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 40px;
+  background-color: #2a9bd5; }
+
+.main .service .button > a > img {
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  height: 19px; }
+
+.main .service .button > a:hover {
+  background-color: #298fd7; }
 
 .main .type {
-  height: 495px;
-  background-color: #E5E5E5; }
+  height: 660px;
+  background: url(../images/index/choose-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden; }
+
+.main .type h3 {
+  margin-top: 30px;
+  height: 104px;
+  background: url(../images/index/share-title.png) no-repeat center center; }
 
 .main .case {
   height: 360px; }
@@ -92,3 +233,7 @@
 .main .choose {
   height: 255px;
   background-color: #08afeb; }
+
+.footer {
+  height: 290px;
+  background-color: #222222; }

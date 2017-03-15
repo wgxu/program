@@ -3,3 +3,8 @@
     opacity: $opacity;
     filter: opacity($opacity*100);
 }
+/*设置背景图*/
+@mixin setBgImg($url) {
+    background: url($url) no-repeat;
+    background-size: 100% 100%;
+}
