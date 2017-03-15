@@ -216,6 +216,26 @@
 .main .service .button > a:hover {
   background-color: #298fd7; }
 
+.main .service .button > a.left:after {
+  position: absolute;
+  top: 50%;
+  left: -170px;
+  display: block;
+  content: '';
+  width: 150px;
+  height: 1px;
+  background-color: #ddd; }
+
+.main .service .button > a.right:after {
+  position: absolute;
+  top: 50%;
+  right: -170px;
+  display: block;
+  content: '';
+  width: 150px;
+  height: 1px;
+  background-color: #ddd; }
+
 .main .type {
   height: 660px;
   background: url(../images/index/choose-bg.jpg) no-repeat;

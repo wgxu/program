@@ -212,6 +212,27 @@ $minWidth: 1200px;
     .button>a:hover {
       background-color: #298fd7;
     }
+    .button>a.left:after {
+       position: absolute;
+       top: 50%;
+       left: -170px;
+       display: block;
+       content: '';
+       width:150px;
+       height:1px;
+       background-color: #ddd;
+     }
+
+    .button>a.right:after {
+      position: absolute;
+      top: 50%;
+      right: -170px;
+      display: block;
+      content: '';
+      width:150px;
+      height:1px;
+      background-color: #ddd;
+    }
   }
 
   .type {
@@ -226,6 +247,7 @@ $minWidth: 1200px;
       height: 104px;
       background: url(../images/index/share-title.png) no-repeat center center;
     }
+
   }
   .case {
     height: getPx(480);
