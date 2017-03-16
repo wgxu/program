@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*清除浮动*/
-.nav-box .nav:after, .main .service .item-list:after, .main .service .button:after {
+.nav-box .nav:after, .main .service .item-list:after, .main .service .button:after, .main .type .cont .leftmenu:after, .main .type .cont .rightmenu:after {
   display: block;
   content: '';
   clear: both;
@@ -247,8 +247,105 @@
   height: 104px;
   background: url(../images/index/share-title.png) no-repeat center center; }
 
+.main .type .cont {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px; }
+
+.main .type .cont a {
+  position: relative;
+  margin-right: 10px;
+  float: left;
+  width: 75px;
+  height: 75px;
+  color: #fff;
+  transition: all .5s ease-out .1s; }
+
+.main .type .cont a:hover .describe {
+  display: block; }
+
+.main .type .cont a .describe {
+  display: none;
+  position: absolute;
+  top: 90px;
+  left: -40px;
+  width: 150px;
+  line-height: 20px; }
+
+.main .type .cont a .describe h4 {
+  text-align: center; }
+
+.main .type .cont a.more {
+  background: url("../images/index/choose-ore.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose01 {
+  background: url("../images/index/choose-01.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose02 {
+  background: url("../images/index/choose-02.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose03 {
+  background: url("../images/index/choose-03.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose04 {
+  background: url("../images/index/choose-04.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose05 {
+  background: url("../images/index/choose-05.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose06 {
+  background: url("../images/index/choose-06.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose07 {
+  background: url("../images/index/choose-07.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont a.choose08 {
+  background: url("../images/index/choose-08.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont .leftmenu {
+  position: absolute;
+  left: 0;
+  top: 200px; }
+
+.main .type .cont .chart {
+  margin: 20px auto;
+  width: 444px;
+  height: 484px;
+  background: url("../images/index/icon.png") no-repeat;
+  background-size: 100% 100%; }
+
+.main .type .cont .rightmenu {
+  position: absolute;
+  right: 0;
+  top: 200px; }
+
+.main .type .cont .rightmenu .nomargin {
+  margin-right: 0; }
+
 .main .case {
-  height: 360px; }
+  padding-top: 30px;
+  height: 480px; }
+
+.main .case > h3 {
+  height: 37px;
+  background: url(../images/index/case-title.png) no-repeat center center; }
+
+.main .case .tips {
+  text-align: center; }
+
+.main .case .item-list {
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden; }
 
 .main .choose {
   height: 255px;

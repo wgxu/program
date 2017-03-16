@@ -247,10 +247,118 @@ $minWidth: 1200px;
       height: 104px;
       background: url(../images/index/share-title.png) no-repeat center center;
     }
+    .cont {
+      & {
+        position: relative;
+        margin: 0 auto;
+        width: $minWidth;
+      }
+      a {
+        & {
+          position: relative;
+          margin-right: 10px;
+          float: left;
+          width: 75px;
+          height:75px;
+          color: #fff;
+          transition: all .5s ease-out .1s;
+        }
+        &:hover {
+          //transform: rotate(720deg);
+        }
+        &:hover .describe {
+          display: block;
+        }
+        .describe {
+          & {
+            display: none;
+            position: absolute;
+            top: 90px;
+            left: -40px;
+            width: 150px;
+            line-height: 20px;
+          }
+          h4 {
+            text-align: center;
+          }
+        }
+      }
+      a.more {
+        @include  setBgImg("../images/index/choose-ore.png");
+      }
+      a.choose01 {
+        @include  setBgImg("../images/index/choose-01.png");
+      }
+      a.choose02 {
+        @include  setBgImg("../images/index/choose-02.png");
+      }
+      a.choose03 {
+        @include  setBgImg("../images/index/choose-03.png");
+      }
+      a.choose04 {
+        @include  setBgImg("../images/index/choose-04.png");
+      }
+      a.choose05 {
+        @include  setBgImg("../images/index/choose-05.png");
+      }
+      a.choose06 {
+        @include  setBgImg("../images/index/choose-06.png");
+      }
+      a.choose07 {
+        @include  setBgImg("../images/index/choose-07.png");
+      }
+      a.choose08 {
+        @include  setBgImg("../images/index/choose-08.png");
+      }
+      .leftmenu {
+        & {
+          position: absolute;
+          left: 0;
+          top: 200px;
+          @extend %clearfix;
+        }
+      }
+      .chart {
+        margin: 20px auto;
+        width: 444px;
+        height: 484px;
+        @include setBgImg('../images/index/icon.png');
+      }
+
+      .rightmenu {
+        & {
+          position: absolute;
+          right: 0;
+          top: 200px;
+          @extend %clearfix;
+        }
+        .nomargin {
+          margin-right: 0;
+        }
+      }
+    }
 
   }
   .case {
-    height: getPx(480);
+    & {
+      padding-top: 30px;
+      height: 480px;
+    }
+    &>h3 {
+      height: 37px;
+      background: url(../images/index/case-title.png) no-repeat center center;
+    }
+    .tips {
+      text-align: center;
+    }
+    .item-list {
+      & {
+        margin-top: 20px;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+
   }
   .choose {
     height: getPx(340);
