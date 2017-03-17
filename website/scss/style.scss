@@ -26,9 +26,11 @@ $minWidth: 1200px;
     position: relative;
     color: #fff;
   }
-  .btn>span:last-child {
-    padding-left: 10px;
-    border-left: 1px solid #f1f1f1;
+  .btn>span {
+    padding:0 10px;
+  }
+  .btn>span:first-child {
+    border-right: 1px solid #f1f1f1;
   }
   .telphone {
     margin-left: 10px;
@@ -43,7 +45,7 @@ $minWidth: 1200px;
   & {
     margin:  0 auto;
     width: $minWidth;
-    padding: 20px 0 10px 0;
+    padding-top: 20px;
   }
   .logo {
     float: left;
@@ -55,12 +57,17 @@ $minWidth: 1200px;
   }
   .nav {
     margin-left: getPx(280);
-    padding: getPx(51/2) 0;
+    padding-top: getPx(51/2);
     @extend %clearfix;
   }
-  .nav>a {
+  .nav-menu {
+    position: relative;
     float: left;
     margin-right: 20px;
+    height: 60px;
+  }
+  .nav-menu>a {
+    display: block;
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
@@ -68,8 +75,8 @@ $minWidth: 1200px;
     color: #666;
     border-radius: 5px;
   }
-  .nav>a.active,
-  .nav>a:hover{
+  .nav-menu>a.active,
+  .nav-menu>a:hover{
     background-color: #288ad9;
     color: #fff;
   }
@@ -343,29 +350,358 @@ $minWidth: 1200px;
     & {
       padding-top: 30px;
       height: 480px;
+      overflow: hidden;
     }
     &>h3 {
       height: 37px;
       background: url(../images/index/case-title.png) no-repeat center center;
     }
     .tips {
+      height: 45px;
+      line-height: 45px;
       text-align: center;
+      color: #777;
+      font-size: 15px;
     }
     .item-list {
       & {
         margin-top: 20px;
-        width: 100%;
-        overflow: hidden;
+        width: 310*10px;
+        @extend %clearfix;
       }
+      .item {
+        position: relative;
+        margin-right: 15px;
+        float: left;
+        width: 295px;
+        height: 248px;
+      }
+      .item img {
+        width: 100%;
+        height: 100%;
+      }
+      .item .describe {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height:50px;
+        background-color: rgba(249,249,249,.5);
+        color: #666;
+        line-height: 50px;
+        text-align: center;
+        font-size: 17px;
+      }
+      .item:hover .describe {
+        background-color: rgba(241,76,38,.8);
+        color: #fff;
+      }
+    }
+    .button {
+      margin: 50px auto 0 auto;
+      width: 180px;
+      @extend %clearfix;
+    }
+    .button>a {
+      position: relative;
+      float: left;
+      width: 50%;
+      height: 40px;
+      background-color: #2a9bd5;
+    }
+    .button>a>img {
+      display: block;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom:0;
+      width:10px;
+      height:19px;
+    }
+    .button>a:hover {
+      background-color: #298fd7;
+    }
+    .button>a.left:after {
+      position: absolute;
+      top: 50%;
+      left: -170px;
+      display: block;
+      content: '';
+      width:150px;
+      height:1px;
+      background-color: #ddd;
+    }
+
+    .button>a.right:after {
+      position: absolute;
+      top: 50%;
+      right: -170px;
+      display: block;
+      content: '';
+      width:150px;
+      height:1px;
+      background-color: #ddd;
     }
 
   }
   .choose {
-    height: getPx(340);
-    background-color: #08afeb;
+    & {
+      overflow: hidden;
+      height: 340px;
+      background-color: #02cbf9;
+      background-image: linear-gradient(#09abe9,#02cbf9);
+    }
+    .title {
+      margin: 45px auto 0 auto;
+      width: 620px;
+      height: 94px;
+      @include setBgImg('../images/index/choose-title.png');
+    }
+    .menu {
+      & {
+        margin: 40px auto 0 auto;
+        width: 152*5px;
+        @extend %clearfix;
+      }
+      &>a {
+        float: left;
+        width: 152px;
+        height: 82+45px;
+      }
+      &>a img{
+        display: block;
+        margin: 0 auto;
+        width: 82px;
+        height:82px;
+      }
+      &>a:last-child {
+        @include clearmargin('right');
+      }
+      &>a>p {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        color: #fff;
+      }
+    }
+  }
+  .news {
+    & {
+      margin:  0 auto;
+      width: $minWidth;
+      height: 840px;
+      overflow: hidden;
+    }
+    &>h3 {
+      margin-top: 40px;
+      height:26px;
+      background: url(../images/index/new-title.png) no-repeat center center;
+    }
+    .tips{
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      color: #777;
+      font-size: 15px;
+    }
+    .item-box {
+      margin-top: 25px;
+      @extend %clearfix;
+    }
+    .item {
+      float: left;
+      margin-right: 60px;
+      width: 360px;
+    }
+    .header {
+      height: 65px;
+      color: #fff;
+      background-color: #009ddc;
+      border-bottom: 1px solid #fff;
+    }
+    .header>p:first-child {
+      float: left;
+      padding:15px 0;
+      width: 65px;
+      border-right:1px solid #fff;
+    }
+    .header>p>span {
+      display: block;
+      height: 15px;
+      line-height:15px;
+      text-align: center;
+    }
+    .header>p>span:first-child {
+      height: 20px;
+      line-height:20px;
+      font-size: 16px;
+    }
+    .title {
+      line-height: 65px;
+      height: 65px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .cont {
+      & {
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+      }
+      &>img {
+        width: 358px;
+        height:220px;
+      }
+      .new-dept {
+        padding: 35px 40px;
+        height: 160px;
+        line-height: 25px;
+        background: url(../images/index/new-icon.png) no-repeat bottom center;
+      }
+      .new-dept> p{
+        overflow: hidden;
+      }
+      .readmore {
+        height: 50px;
+        line-height:40px;
+        text-align: center;
+      }
+      .readmore>a {
+        color: #999;
+      }
+      .readmore>a:hover {
+        color: #666;
+      }
+    }
+    .morenew {
+      position: relative;
+      display: block;
+      margin: 60px auto 0 auto;
+      padding: 0 40px;
+      width: 190px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid #5b5959;
+      color: #5b5959;
+      font-size: 16px;
+      background: url(../images/index/arrowico.png) no-repeat  20px 12px;
+    }
+    .morenew:hover {
+      color: #333;
+    }
+    .morenew:after {
+      position: absolute;
+      top:12px;
+      right: 20px;
+      display: block;
+      content: '';
+      width:11px;
+      height:16px;
+      background: url(../images/index/arrowico.png) no-repeat;
+    }
   }
 }
 .footer {
-  height: 290px;
-  background-color: #222222;
+  & {
+    min-height: 250px;
+    background-color: #222222;
+  }
+  .cont {
+    padding-top: 25px;
+    margin: 0 auto;
+    width: $minWidth;
+  }
+  .links {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #393939;
+  }
+  .links>span{
+    padding: 0 40px;
+    float: left;
+    width: 80px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #acabab;
+  }
+  .links>p {
+    margin-left: 160px;
+    min-height: 60px;
+    line-height: 30px;
+  }
+  .links>p>a {
+    margin-right: 20px;
+    color: #acabab;
+  }
+  .companyinfo {
+    color: #acabab;
+  }
+  .companyinfo .logo {
+    float: left;
+    padding:20px 35px;
+    width: 230px;
+  }
+  .companyinfo .logo img {
+    width: 100%;
+  }
+  .wechat {
+    margin-top: 20px;
+    float: right;
+    width: 220px;
+    height: 80px;
+    border: 1px solid #393939;
+  }
+  .wechat img {
+    float: right;
+    width: 80px;
+    height: 80px;
+  }
+  .wechat p {
+    margin-right: 80px;
+    padding: 20px;
+    line-height: 20px;
+  }
+  .phone {
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 430px;
+  }
+  .phone p {
+    color: #acabab;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .button {
+    @extend %clearfix;
+    margin-top: 10px;
+  }
+  .button>a {
+    padding-left: 70px;
+    float: left;
+    width: 130px;
+    height: 35px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+    background: url(../images/comm/phone.png) no-repeat 30px center;
+    background-color: #006dba;
+  }
+  .button>a:first-child {
+    margin-right: 20px;
+    background: url(../images/comm/qq.png) no-repeat 30px center;
+    background-color: #006dba;
+  }
+  .companyNum {
+    border-top: 1px solid #393939;
+    height: 40px;
+    line-height: 40px;
+    background-color: #121212;
+    color: #acabab;
+    font-size: 13px;
+    text-align: center;
+  }
 }

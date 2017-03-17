@@ -5,6 +5,10 @@
 }
 /*设置背景图*/
 @mixin setBgImg($url) {
-    background: url($url) no-repeat;
+    background: url($url) no-repeat center center;
     background-size: 100% 100%;
+}
+/*清楚margin*/
+@mixin clearmargin($direct: 'left') {
+    margin-#{$direct}: 0;
 }
