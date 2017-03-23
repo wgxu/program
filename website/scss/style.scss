@@ -303,13 +303,17 @@ $minWidth: 1200px;
           width: 75px;
           height:75px;
           color: #fff;
-          transition: all .5s ease-out .1s;
         }
-        &:hover {
-          //transform: rotate(720deg);
+        &:hover .icon{
+          transform: rotate(360deg);
         }
         &:hover .describe {
           display: block;
+        }
+        .icon {
+          width: 75px;
+          height: 75px;
+          transition: all 1s ease-out .1s;
         }
         .describe {
           & {
@@ -328,28 +332,28 @@ $minWidth: 1200px;
       a.more {
         @include  setBgImg("../images/index/choose-ore.png");
       }
-      a.choose01 {
+      .icon.choose01 {
         @include  setBgImg("../images/index/choose-01.png");
       }
-      a.choose02 {
+      .icon.choose02 {
         @include  setBgImg("../images/index/choose-02.png");
       }
-      a.choose03 {
+      .icon.choose03 {
         @include  setBgImg("../images/index/choose-03.png");
       }
-      a.choose04 {
+      .icon.choose04 {
         @include  setBgImg("../images/index/choose-04.png");
       }
-      a.choose05 {
+      .icon.choose05 {
         @include  setBgImg("../images/index/choose-05.png");
       }
-      a.choose06 {
+      .icon.choose06 {
         @include  setBgImg("../images/index/choose-06.png");
       }
-      a.choose07 {
+      .icon.choose07 {
         @include  setBgImg("../images/index/choose-07.png");
       }
-      a.choose08 {
+      .icon.choose08 {
         @include  setBgImg("../images/index/choose-08.png");
       }
       .leftmenu {

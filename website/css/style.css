@@ -299,11 +299,18 @@
   float: left;
   width: 75px;
   height: 75px;
-  color: #fff;
-  transition: all .5s ease-out .1s; }
+  color: #fff; }
+
+.main .type .cont a:hover .icon {
+  transform: rotate(360deg); }
 
 .main .type .cont a:hover .describe {
   display: block; }
+
+.main .type .cont a .icon {
+  width: 75px;
+  height: 75px;
+  transition: all 1s ease-out .1s; }
 
 .main .type .cont a .describe {
   display: none;
@@ -320,35 +327,35 @@
   background: url("../images/index/choose-ore.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose01 {
+.main .type .cont .icon.choose01 {
   background: url("../images/index/choose-01.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose02 {
+.main .type .cont .icon.choose02 {
   background: url("../images/index/choose-02.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose03 {
+.main .type .cont .icon.choose03 {
   background: url("../images/index/choose-03.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose04 {
+.main .type .cont .icon.choose04 {
   background: url("../images/index/choose-04.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose05 {
+.main .type .cont .icon.choose05 {
   background: url("../images/index/choose-05.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose06 {
+.main .type .cont .icon.choose06 {
   background: url("../images/index/choose-06.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose07 {
+.main .type .cont .icon.choose07 {
   background: url("../images/index/choose-07.png") no-repeat center center;
   background-size: 100% 100%; }
 
-.main .type .cont a.choose08 {
+.main .type .cont .icon.choose08 {
   background: url("../images/index/choose-08.png") no-repeat center center;
   background-size: 100% 100%; }
 
